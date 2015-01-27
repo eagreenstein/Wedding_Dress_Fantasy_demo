@@ -38,21 +38,32 @@ nav a {
 	text-decoration: none;
 }
 
-/*nav
-#top
-#bottom
-nav a*/
+/*mouse over link*/
+a:hover {
+
+}
+
+/*selected link*/
+
+a:active {
+
+}
 
 /*------------------------------------------------------------------*\
     #Dropdown
 \*------------------------------------------------------------------*/
+
+
+/* ADD SHADOW TO DROP DOWN BOXES*/
 .dropdown {
 	background-color: #F24FA8;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	display: none;
 	position: absolute; /*check on this and make sure it works*/
-	top: 100%; /*what does this mean again?*/
+	text-align: left;
+	/*top: 100%;*/
+	width: 200%;
 }
 
 .dropdown-container {
@@ -68,10 +79,14 @@ nav a*/
 .dropdown a {
 	color: white; /*Change this later, maybe? */
 	display: inline-block;
+	font-size: 13px;
+	width: 100%;
 }
 
 ul li:hover {
 	background-color: white;
+	border-bottom-left-radius: 10px; /*Trying to fix hover corners*/
+	border-bottom-right-radius: 10px;
 }
 
 ul li:hover a {
@@ -83,16 +98,24 @@ ul li:hover a {
     #Content
 \*------------------------------------------------------------------*/
 
-/*#hero
+#hero {
+	height: 313px;
+	width: 958px;
+	border: solid black 20px;
+	margin: 0 auto;
+}
 
-#welcome-blurb
-*/
+/*#welcome-blurb*/
+
 h1 {
 	font-family: 'Playfair Display SC', serif;
+	margin: 0 auto;
+	text-align: center;
 }
 
 p {
 	font-family: 'Lora', serif;
+	margin: 0 auto;
 }
 
 
@@ -100,11 +123,16 @@ p {
     #Features
 \*------------------------------------------------------------------*/
 
-/*#features-block
+/*#features-block*/
 
-.features
+.features {
+	background-color: black;
+	width: 300px;
+	height: 180px;
+	display: inline-block; /*change to float?*/
+}
 
-#join-club
+/*#join-club
 
 #video
 
@@ -115,12 +143,43 @@ p {
     #Footer
 \*------------------------------------------------------------------*/
 
-/*#ff-container
+#ff-container {
 
-.footer-features*/
+}
+
+.footer-features {
+	float: left;
+	width: 15%;
+}
+
+.footer-features ul {
+	list-style: none;
+}
+
+.footer-list {
+	padding-left: 0px;
+	font-size: 10px;
+}
+
+.footer-list li a {
+	color: #F24FA8;
+	text-decoration: none;
+}
+
+.footer-list li:hover a {
+	color: #B23A7C;
+	font-weight: bold;
+}
+
+.footer-list li:hover { 
+	background-color: rgba(0,0,0,0);
+}
+/*to prevent the background color from drop down appearing*/
 
 h2 {
+	color: #F24FA8;
 	font-family: 'Playfair Display SC', serif;
+	font-size: 12px;
 }
 
 /*#customer-service
@@ -133,6 +192,10 @@ h2 {
 
 #social-container
 
-.social
+.social*/
 
-#copyright
+#copyright {
+	display: block;
+	clear: both;
+	width: 100%;
+}
