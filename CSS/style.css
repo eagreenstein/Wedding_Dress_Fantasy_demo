@@ -1,18 +1,41 @@
 body {
 	background-color: #F9F3F3;
+	font-family: 'Lora', serif;
 }
 
 /*------------------------------------------------------------------*\
     #Header
 \*------------------------------------------------------------------*/
 
-header
+header {
+
+}
 
 form {
 	float: right;
 }
+
 input {
-	font-family: ;
+	font-family: font-family: 'Lora', serif;
+}
+
+#header-bottom {
+	/*background-color: #F24FA8; wait until it's sized smaller so you don't go blind */
+}
+
+nav {
+	background-color: #F24FA8;
+	display: inline-block;
+	text-align: right;
+	width: 100%; /*?*/
+}
+
+nav a {
+	color: white;
+	font-family: 'Playfair Display SC', serif;
+	font-size: 15px; /* taken from iva */
+	padding: 0 20px; /* taken from iva */
+	text-decoration: none;
 }
 
 /*nav
@@ -23,22 +46,49 @@ nav a*/
 /*------------------------------------------------------------------*\
     #Dropdown
 \*------------------------------------------------------------------*/
-.dropdown-container
+.dropdown {
+	background-color: #F24FA8;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: none;
+	position: absolute; /*check on this and make sure it works*/
+	top: 100%; /*what does this mean again?*/
+}
 
-.dropdown
+.dropdown-container {
+	padding-bottom: 5px; /*?*/
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-container:hover .dropdown {
+	display: block;
+}
+
+.dropdown a {
+	color: white; /*Change this later, maybe? */
+	display: inline-block;
+}
+
+ul li:hover {
+	background-color: white;
+}
+
+ul li:hover a {
+	color: #F24FA8;
+}
 
 
 /*------------------------------------------------------------------*\
     #Content
 \*------------------------------------------------------------------*/
 
-#hero
+/*#hero
 
 #welcome-blurb
-
+*/
 h1 {
 	font-family: 'Playfair Display SC', serif;
-	/* Why is this font not displaying? Ask someone*/
 }
 
 p {
@@ -50,7 +100,7 @@ p {
     #Features
 \*------------------------------------------------------------------*/
 
-#features-block
+/*#features-block
 
 .features
 
@@ -58,18 +108,22 @@ p {
 
 #video
 
-#buyers-guide
+#buyers-guide*/
 
 
 /*------------------------------------------------------------------*\
     #Footer
 \*------------------------------------------------------------------*/
 
-#ff-container
+/*#ff-container
 
-.footer-features
+.footer-features*/
 
-#customer-service
+h2 {
+	font-family: 'Playfair Display SC', serif;
+}
+
+/*#customer-service
 
 #store-info
 
