@@ -4,7 +4,7 @@ body {
 }
 
 /*------------------------------------------------------------------*\
-    #Header
+    #Header-Top
 \*------------------------------------------------------------------*/
 
 header {
@@ -13,17 +13,32 @@ header {
 	width: 960px;
 }
 
-footer {
-	margin: 0px auto;
-	width: 960px;
+#header-top {
+	height: 70px;
+	background-image: url('../Images/dressracktop.png'); /*not working. why?*/
 }
+
+#logo {
+	float: left;
+}
+
 form {
 	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
 }
 
 input {
-	font-family: font-family: 'Lora', serif;
+	/*border-radius: 1px;*/
+	font-family: 'Lora', serif;
+	font-size: 12px;
+	height: 25px;
+	width: 180px;
 }
+
+/*------------------------------------------------------------------*\
+    #Header-Bottom
+\*------------------------------------------------------------------*/
 
 #header-bottom {
 	/*background-color: #F24FA8; wait until it's sized smaller so you don't go blind */
@@ -33,7 +48,7 @@ nav {
 	background-color: #F24FA8;
 	display: inline-block;
 	text-align: right;
-	width: 100%; /*?*/
+	width: 100%; /*change to cover whole window?*/
 }
 
 nav a {
@@ -62,8 +77,8 @@ nav a:active {
 /* ADD SHADOW TO DROP DOWN BOXES*/
 .dropdown {
 	background-color: #F24FA8;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	display: none;
 	position: absolute; /*check on this and make sure it works*/
 	/*padding-top: -2em;*/
@@ -73,12 +88,14 @@ nav a:active {
 	width: 100%;
 	margin: 5px 0px 0px 0px;
 	padding: 0px;
+	box-shadow: 0px 1px 1px 0px rgb(100,100,100);
 }
 
 .dropdown a {
 	color: white; /*Change this later, maybe? */
 	display: inline-block;
 	font-size: 12px;
+	/*overflow: hidden; tried to fix corners*/
 	/*width: 100%;*/
 }
 
@@ -98,13 +115,18 @@ ul li:hover {
 	border-bottom-right-radius: 10px;*/
 }
 
+ul li:hover:last-child {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
 ul li:hover a {
 	color: #F24FA8;
 }
 
 
 /*------------------------------------------------------------------*\
-    #Content
+    #Content-Main
 \*------------------------------------------------------------------*/
 
 .main { /*why does this look weird?*/
@@ -164,8 +186,16 @@ p {
     #Footer
 \*------------------------------------------------------------------*/
 
+footer {
+	background-image: url('../Images/dressrackbottom.png');
+	height: 180px;
+	margin: 0px auto;
+	width: 960px;
+}
+
 #ff-container {
 	margin: 0px auto;
+	padding-left: 10px;
 }
 
 .footer-features {
