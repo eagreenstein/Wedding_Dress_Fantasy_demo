@@ -135,7 +135,7 @@ ul li:hover a {
 	width: 960px;
 }
 
-#hero {
+.flexslider {
 	height: 315px;
 	width: 940px;
 	display: block;
@@ -145,7 +145,7 @@ ul li:hover a {
 }
 
 #welcome-blurb {
-	margin: 10px auto;
+	margin: 40px auto; /*added 30px because flexslider dots overlapped*/
 	width: 80%;
 }
 
