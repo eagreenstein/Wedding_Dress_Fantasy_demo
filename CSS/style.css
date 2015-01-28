@@ -8,9 +8,15 @@ body {
 \*------------------------------------------------------------------*/
 
 header {
-
+	/* */
+	margin: 0px auto;
+	width: 960px;
 }
 
+footer {
+	margin: 0px auto;
+	width: 960px;
+}
 form {
 	float: right;
 }
@@ -39,13 +45,12 @@ nav a {
 }
 
 /*mouse over link*/
-a:hover {
+nav a:hover {
 
 }
 
 /*selected link*/
-
-a:active {
+nav a:active {
 
 }
 
@@ -61,9 +66,20 @@ a:active {
 	border-bottom-right-radius: 10px;
 	display: none;
 	position: absolute; /*check on this and make sure it works*/
-	text-align: left;
+	/*padding-top: -2em;*/
+	/*text-align: left;*/
 	/*top: 100%;*/
-	width: 200%;
+	text-align: left;
+	width: 100%;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+}
+
+.dropdown a {
+	color: white; /*Change this later, maybe? */
+	display: inline-block;
+	font-size: 12px;
+	/*width: 100%;*/
 }
 
 .dropdown-container {
@@ -76,17 +92,10 @@ a:active {
 	display: block;
 }
 
-.dropdown a {
-	color: white; /*Change this later, maybe? */
-	display: inline-block;
-	font-size: 13px;
-	width: 100%;
-}
-
 ul li:hover {
 	background-color: white;
-	border-bottom-left-radius: 10px; /*Trying to fix hover corners*/
-	border-bottom-right-radius: 10px;
+	/*border-bottom-left-radius: 10px; Trying to fix hover corners
+	border-bottom-right-radius: 10px;*/
 }
 
 ul li:hover a {
@@ -98,24 +107,35 @@ ul li:hover a {
     #Content
 \*------------------------------------------------------------------*/
 
-#hero {
-	height: 313px;
-	width: 958px;
-	border: solid black 20px;
-	margin: 0 auto;
+.main { /*why does this look weird?*/
+	margin: 0px auto;
+	width: 960px;
 }
 
-/*#welcome-blurb*/
+#hero {
+	height: 315px;
+	width: 940px;
+	display: block;
+	margin: 20px auto 10px auto;
+	/*border: solid black 20px;
+	margin: 0 auto;*/
+}
+
+#welcome-blurb {
+	margin: 10px auto;
+	width: 80%;
+}
 
 h1 {
 	font-family: 'Playfair Display SC', serif;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 20px;
 }
 
 p {
 	font-family: 'Lora', serif;
-	margin: 0 auto;
+	font-size: 14px;
 }
 
 
@@ -127,9 +147,10 @@ p {
 
 .features {
 	background-color: black;
-	width: 300px;
-	height: 180px;
 	display: inline-block; /*change to float?*/
+	height: 180px;
+	margin-left: 1%;
+	width: 300px;
 }
 
 /*#join-club
@@ -144,7 +165,7 @@ p {
 \*------------------------------------------------------------------*/
 
 #ff-container {
-
+	margin: 0px auto;
 }
 
 .footer-features {
