@@ -23,6 +23,10 @@ header {
 	float: left;
 }
 
+#logo img {
+	height: 66px;
+}
+
 form {
 	float: right;
 	margin-top: 10px;
@@ -71,7 +75,7 @@ nav {
 	background-color: #F24FA8;
 	display: inline-block;
 	padding: 0px auto;
-	text-align: right;
+	text-align: center;
 	width: 100%; /*change to cover whole window?*/
 	-webkit-box-shadow: 0 8px 6px -6px #ccc;
      -moz-box-shadow: 0 8px 6px -6px #ccc;
@@ -82,7 +86,7 @@ nav a {
 	color: white;
 	font-family: 'Playfair Display SC', serif;
 	font-size: 15px; /* taken from iva */
-	padding: 0 20px; /* taken from iva */
+	padding: 0 30px; /* taken from iva */
 	text-decoration: none;
 }
 
@@ -119,7 +123,7 @@ nav a:active {
 	/*text-align: left;*/
 	/*top: 100%;*/
 	text-align: left;
-	width: 100%;
+	width: 250px;
 	margin: 5px 0px 0px 0px;
 	padding: 0px;
 	box-shadow: 0px 1px 1px 0px rgb(100,100,100);
@@ -184,6 +188,7 @@ ul li:hover a {
 }
 
 h1 {
+	color: #42162E;
 	font-family: 'Playfair Display SC', serif;
 	margin: 0 auto;
 	text-align: center;
@@ -191,6 +196,7 @@ h1 {
 }
 
 #welcome-blurb p {
+	color: #42162E;
 	font-family: 'Lora', serif;
 	font-size: 14px;
 	text-align: center;
@@ -283,7 +289,7 @@ h2 {
 
 #social-container {
 	float: left;
-	padding-right: 15px;
+	padding-left: 60px;
 }
 
 #social-container img {
