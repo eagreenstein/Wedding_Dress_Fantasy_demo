@@ -1,6 +1,6 @@
 body {
 	background-color: #F9F3F3;
-	background-image: url('../Images/subtle_surface_champagne.png');
+	background-image: url('../Images/subtle_surface_pink2.png');
 	font-family: 'Lora', serif;
 }
 
@@ -26,7 +26,6 @@ header {
 form {
 	float: right;
 	margin-top: 10px;
-	margin-right: 10px;
 }
 
 input {
@@ -37,6 +36,29 @@ input {
 	width: 180px;
 }
 
+.upper {
+	float: right;
+	width: 20%;
+}
+
+.upper p {
+	float: right;
+	font-size: 10px;
+	font-weight: bold;
+	color: #f24fa8;
+	margin: 20px;
+}
+
+.upper img {
+	width: 30px;
+	float: right;
+	margin: 10px 20px 20px 10px;
+}
+
+.heart img {
+	width: 25px;
+	margin: 15px 10px 0 0px;
+}
 /*------------------------------------------------------------------*\
     #Header-Bottom
 \*------------------------------------------------------------------*/
@@ -188,11 +210,15 @@ p {
 	width: 300px;
 }
 
-/*#join-club
+.features img {
+	width: 300px;
+}
+/*#join-club*/
 
-#video
+#video {
+}
 
-#buyers-guide*/
+/*#buyers-guide*/
 
 
 /*------------------------------------------------------------------*\
@@ -203,7 +229,7 @@ footer {
 	background-image: url('../Images/dressrackbottom.png');
 	height: 180px;
 	margin: 0px auto;
-	width: 960px;
+	width: 100%px;
 }
 
 #ff-container {
@@ -259,7 +285,18 @@ h2 {
 .social*/
 
 #copyright {
+	background-color: #F24FA8;
 	display: block;
 	clear: both;
 	width: 100%;
+	height: 15px;
+}
+
+#copyright p {
+	color: white;
+	font-size: 9px;
+	margin: 0 auto;
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	text-align: center;
 }
