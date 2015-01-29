@@ -1,6 +1,6 @@
 body {
 	background-color: #F9F3F3;
-	background-image: url('../Images/subtle_surface_pink2.png');
+	background-image: url('../Images/blur.png');
 	font-family: 'Lora', serif;
 }
 
@@ -179,8 +179,8 @@ ul li:hover a {
 }
 
 #welcome-blurb {
-	margin: 40px auto; /*added 30px because flexslider dots overlapped*/
-	width: 80%;
+	margin: 40px auto 20px auto; /*added 30px because flexslider dots overlapped*/
+	width: 100%;
 }
 
 h1 {
@@ -190,9 +190,10 @@ h1 {
 	font-size: 20px;
 }
 
-p {
+#welcome-blurb p {
 	font-family: 'Lora', serif;
 	font-size: 14px;
+	text-align: center;
 }
 
 
@@ -228,7 +229,7 @@ p {
 footer {
 	background-image: url('../Images/dressrackbottom.png');
 	height: 180px;
-	margin: 0px auto;
+	margin: 20px auto 0px auto;
 	width: 100%px;
 }
 
@@ -278,11 +279,19 @@ h2 {
 
 #account
 
-#buyers-guide-f
+#buyers-guide-f*/
 
-#social-container
+#social-container {
+	float: left;
+	padding-right: 15px;
+}
 
-.social*/
+#social-container img {
+	width: 30px;
+	margin: 10px;
+}
+
+/*.social*/
 
 #copyright {
 	background-color: #F24FA8;
