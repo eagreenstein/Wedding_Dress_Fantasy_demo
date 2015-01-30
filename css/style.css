@@ -1,6 +1,6 @@
 body {
 	background-color: #F9F3F3;
-	background-image: url('../Images/blur.png');
+	background-image: url('../images/blur.png');
 	font-family: 'Lora', serif;
 }
 
@@ -15,7 +15,7 @@ header {
 
 #header-top {
 	height: 70px;
-	background-image: url('../Images/dressracktop.png');
+	background-image: url('../images/dressracktop.png');
 /*	background-repeat: no-repeat;*/
 }
 
@@ -233,7 +233,7 @@ h1 {
 \*------------------------------------------------------------------*/
 
 footer {
-	background-image: url('../Images/dressrackbottom.png');
+	background-image: url('../images/dressrackbottom.png');
 	height: 180px;
 	margin: 20px auto 0px auto;
 	width: 100%px;
